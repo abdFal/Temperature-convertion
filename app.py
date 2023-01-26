@@ -8,7 +8,7 @@ def convert():
         fahrenheit = (celsius * 9/5) + 32
         return str(fahrenheit) + ' degrees Fahrenheit'
     return '''
-        <form method="post">
+        <form method="post">Suhu
             Celsius: <input type="text" name="celsius"><br>
             <input type="submit" value="Convert to Fahrenheit">
         </form>
