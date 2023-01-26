@@ -1,0 +1,23 @@
+<html>
+  <head>
+    <title>Temperature Conversion</title>
+    <script src="pyscript.js"></script>
+  </head>
+  <body>
+    <h1>Temperature Conversion</h1>
+    <form>
+      <label>Enter temperature in Fahrenheit:</label>
+      <input type="text" id="temp_fahrenheit" />
+      <button type="button" onclick="convertTemperature()">Convert</button>
+    </form>
+    <p id="result"></p>
+    <script>
+      function convertTemperature() {
+        let temp_fahrenheit = document.getElementById("temp_fahrenheit").value;
+        let temp_celsius = ((temp_fahrenheit - 32) * 5) / 9;
+        document.getElementById("result").innerHTML =
+          temp_fahrenheit + "F = " + temp_celsius.toFixed(2) + "C";
+      }
+    </script>
+  </body>
+</html>
