@@ -1,4 +1,4 @@
-# pip install Flask
+# In your terminal, install the Flask library by running pip install Flask
 
 from flask import Flask, request
 app = Flask(__name__)
@@ -11,7 +11,7 @@ def convert():
         return str(fahrenheit) + ' degrees Fahrenheit'
     return '''
         <form method="post">Suhu
-            Celsius: <input type="text" name="celsius"><br>
+            Celsius:<br> <input type="text" name="celsius"><br>
             <input type="submit" value="Convert to Fahrenheit">
         </form>
     '''
